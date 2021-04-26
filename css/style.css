@@ -1,0 +1,67 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  font-family: "Share Tech Mono", monospace;
+}
+canvas {
+  width: 100%;
+  height: 90vh;
+  display: inline-block;
+}
+.wrapper,
+.count-wrapper {
+  position: relative;
+  text-align: center;
+}
+.wrapper {
+  margin-top: 5vh;
+}
+.count-wrapper,
+.canvas-wrapper {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+}
+.count {
+  font-size: 100px;
+  color: #555;
+  width: 200px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 100px;
+  display: inline-block;
+}
+.pole {
+  position: absolute;
+  left: 0;
+  width: calc(50% - 4px);
+  height: 90vh;
+  top: 0;
+  right: 50%;
+  bottom: 0;
+  border-right: 4px dashed #555;
+}
+
+#canvas {
+  background-color: black;
+  border: 4px solid black;
+  position: relative;
+}
+.ball {
+  background-color: white;
+  position: absolute;
+}
+
+.wall {
+  background-color: white;
+  position: absolute;
+}
